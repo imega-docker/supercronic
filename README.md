@@ -120,10 +120,3 @@ you should be able to set up and configure Supercronic to handle your service
 management needs efficiently. For further assistance, refer to the
 [official Supercronic GitHub repository](https://github.com/aptible/supercronic)
 and the [xh documentation](https://github.com/ducaale/xh).
-
-## Usage like service
-
-```bash
-$ echo "*/1 * * * * xh http://someservice:8081/task" > crontabs
-$ docker run --rm -d -v `pwd`/crontabs:/crontabs imega/supercronic -json /crontabs
-```
